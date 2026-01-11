@@ -15,7 +15,7 @@ export async function GET() {
       );
     }
 
-    return new NextResponse(settings.bannerImage, {
+    return new NextResponse(Buffer.from(settings.bannerImage), {
       headers: {
         'Content-Type': settings.bannerMimeType,
         'Cache-Control': 'public, max-age=3600',

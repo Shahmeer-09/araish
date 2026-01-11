@@ -21,7 +21,7 @@ export async function GET(
     }
 
     // Return the binary image data with proper content type
-    return new NextResponse(image.data, {
+    return new NextResponse(Buffer.from(image.data), {
       headers: {
         'Content-Type': image.mimeType,
         'Cache-Control': 'public, max-age=31536000, immutable',

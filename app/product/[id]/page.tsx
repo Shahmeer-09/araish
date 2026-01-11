@@ -88,9 +88,18 @@ export default function ProductPage() {
   }
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '1234567890';
+    const phoneNumber = '923359178835'; // Pakistan format: 92 (country code) + number without leading 0
+    const productUrl = window.location.href;
+    const imageUrl = product.images.length > 0 
+      ? `${window.location.origin}/api/images/${product.images[0].id}`
+      : '';
+    
     const message = encodeURIComponent(
-      `Hello! I'm interested in the ${product.name}. Can you provide more details?`
+      `Hello! I need more details on this product:\n\n` +
+      `📿 *${product.name}*\n` +
+      `💰 Price: Rs. ${product.price.toLocaleString()}\n` +
+      `🔗 Link: ${productUrl}\n\n` +
+      `Could you please provide more information about this item?`
     );
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');

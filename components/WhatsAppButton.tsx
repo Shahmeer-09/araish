@@ -6,7 +6,7 @@ export default function WhatsAppButton() {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '03359178835';
+    const phoneNumber = '923359178835'; // Pakistan format: 92 (country code) + number without leading 0
     const message = encodeURIComponent('Hello! I am interested in your jewelry collection.');
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');

@@ -72,8 +72,25 @@ var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$g
 ;
 ;
 const metadata = {
-    title: "Luxe Jewelry - Exquisite Handcrafted Jewelry Collection",
-    description: "Discover our exclusive collection of handcrafted jewelry. From elegant rings to stunning necklaces, each piece is a masterpiece of craftsmanship and timeless design."
+    title: "Araish - Exquisite Jewelry",
+    description: "Handcrafted jewelry for timeless elegance.",
+    icons: {
+        icon: [
+            {
+                url: '/favicon.ico'
+            },
+            {
+                url: '/favicon.ico',
+                sizes: '16x16',
+                type: 'image/x-icon'
+            },
+            {
+                url: '/favicon.ico',
+                sizes: '32x32',
+                type: 'image/x-icon'
+            }
+        ]
+    }
 };
 function RootLayout({ children }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("html", {
@@ -83,12 +100,12 @@ function RootLayout({ children }) {
             children: children
         }, void 0, false, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 27,
+            lineNumber: 34,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 26,
+        lineNumber: 33,
         columnNumber: 5
     }, this);
 }

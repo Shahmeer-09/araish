@@ -1,111 +1,9 @@
-[00:00:02.291] Server  LOG     ✓ Ready in 1712ms
-[00:00:02.446] Server  ERROR   Node.js fs rename failed after 101 retries with error Error: EPERM: operation not permitted, rename 'E:\downloads\project\jewelry-showcase\.next\dev\server\server-reference-manifest.js.tmp.gqu8ea9nmk' -> 'E:\downloads\project\jewelry-showcase\.next\dev\server\server-reference-manifest.js'
-[00:00:02.459] Server  ERROR   ⨯ Error: EPERM: operation not permitted, rename 'E:\downloads\project\jewelry-showcase\.next\dev\server\server-reference-manifest.js.tmp.gqu8ea9nmk' -> 'E:\downloads\project\jewelry-showcase\.next\dev\server\server-reference-manifest.js'
-[00:00:02.596] Server  ERROR   Node.js fs rename failed after 101 retries with error Error: EPERM: operation not permitted, rename 'E:\downloads\project\jewelry-showcase\.next\dev\server\middleware-build-manifest.js.tmp.p4s6w0lkh1' -> 'E:\downloads\project\jewelry-showcase\.next\dev\server\middleware-build-manifest.js'
-[00:00:02.601] Server  ERROR   ⨯ Error: EPERM: operation not permitted, rename 'E:\downloads\project\jewelry-showcase\.next\dev\server\middleware-build-manifest.js.tmp.p4s6w0lkh1' -> 'E:\downloads\project\jewelry-showcase\.next\dev\server\middleware-build-manifest.js'
-[00:00:02.635] Server  ERROR   Node.js fs rename failed after 101 retries with error Error: EPERM: operation not permitted, rename 'E:\downloads\project\jewelry-showcase\.next\dev\static\development\_buildManifest.js.tmp.x9lwfz3m9f' -> 'E:\downloads\project\jewelry-showcase\.next\dev\static\development\_buildManifest.js'
-[00:00:02.640] Server  ERROR   Error: EPERM: operation not permitted, rename 'E:\downloads\project\jewelry-showcase\.next\dev\server\server-reference-manifest.js.tmp.gqu8ea9nmk' -> 'E:\downloads\project\jewelry-showcase\.next\dev\server\server-reference-manifest.js'
-[00:00:43.011] Server  WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:01.847] Server  LOG     ✓ Ready in 1279ms
+[00:00:02.744] Server  WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:43.416] Browser WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:05.020] Browser WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:33.807] Server  LOG     ✓ Compiled in 762ms
-[00:02:29.805] Server  LOG     ✓ Compiled in 64ms
-[00:06:52.676] Server  LOG     ✓ Compiled in 63ms
-[00:07:14.366] Server  LOG     ✓ Compiled in 77ms
-[00:07:42.928] Server  LOG     ✓ Compiled in 71ms
-[00:08:20.637] Server  LOG     ✓ Compiled in 98ms
-[00:09:17.472] Server  LOG     ✓ Compiled in 99ms
-[00:09:43.185] Server  LOG     ✓ Compiled in 82ms
-[00:10:13.826] Server  LOG     ✓ Compiled in 89ms
-[00:11:19.578] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/admin" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <RootLayout>
-                        <html lang="en">
-                          <body
-                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
--                           cz-shortcut-listen="true"
-                          >
-                  ...
-
-[00:12:30.898] Browser WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:13:41.855] Server  LOG     ✓ Compiled in 127ms
-[00:14:04.055] Server  LOG     ✓ Compiled in 149ms
-[00:14:18.576] Server  LOG     ✓ Compiled in 101ms
-[00:14:24.513] Server  LOG     ✓ Compiled in 47ms
-[00:17:42.326] Server  LOG     ✓ Compiled in 83ms
-[00:17:49.252] Server  LOG     ✓ Compiled in 47ms
-[00:18:58.133] Server  LOG     ✓ Compiled in 40ms
-[00:19:03.846] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/admin" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <RootLayout>
-                        <html lang="en">
-                          <body
-                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
--                           cz-shortcut-listen="true"
-                          >
-                  ...
-
-[00:19:07.008] Server  LOG     ✓ Compiled in 47ms
-[00:19:13.118] Server  LOG     ✓ Compiled in 49ms
-[00:19:23.135] Server  LOG     ✓ Compiled in 62ms
-[00:19:30.013] Server  LOG     ✓ Compiled in 83ms
-[00:19:50.550] Server  WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:19:50.847] Browser WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:19:50.847] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:05.021] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -124,6 +22,115 @@ It can also happen if the client has a browser extension installed which messes 
         <DevRootHTTPAccessFallbackBoundary>
           <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
             <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:00:32.145] Server  WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:32.471] Browser WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:23.096] Server  WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:23.333] Browser WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:24.466] Browser WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:25.432] Browser WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:41.048] Browser WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:55.554] Browser WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:56.531] Browser WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:57.435] Browser WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:57.766] Browser WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:58.049] Browser WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:58.317] Browser WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:03:19.370] Server  LOG     ✓ Compiled in 376ms
+[00:03:20.535] Browser WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:05:08.970] Server  WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:05:09.008] Server  LOG     ✓ Compiled in 1463ms
+[00:05:09.529] Browser WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:05:09.529] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:05:21.391] Browser WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:05:38.260] Server  LOG     ✓ Compiled in 187ms
+[00:05:38.538] Browser WARN    Image with src "https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:06:12.423] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin" notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
                   <Head>

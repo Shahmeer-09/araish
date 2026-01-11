@@ -1318,10 +1318,6 @@
     background-color: var(--color-red-500);
   }
 
-  .bg-transparent {
-    background-color: #0000;
-  }
-
   .bg-white {
     background-color: var(--color-white);
   }
@@ -1397,20 +1393,6 @@
 
   .from-\[var\(--gold-light\)\] {
     --tw-gradient-from: var(--gold-light);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-
-  .from-black\/40 {
-    --tw-gradient-from: #0006;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .from-black\/40 {
-      --tw-gradient-from: color-mix(in oklab, var(--color-black) 40%, transparent);
-    }
-  }
-
-  .from-black\/40 {
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 

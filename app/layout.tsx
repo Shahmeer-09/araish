@@ -13,8 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Luxe Jewelry - Exquisite Handcrafted Jewelry Collection",
-  description: "Discover our exclusive collection of handcrafted jewelry. From elegant rings to stunning necklaces, each piece is a masterpiece of craftsmanship and timeless design.",
+  title: "Araish - Exquisite Jewelry",
+  description: "Handcrafted jewelry for timeless elegance.",
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon.ico', sizes: '16x16', type: 'image/x-icon' },
+      { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
+    ],
+  },
 };
 
 export default function RootLayout({

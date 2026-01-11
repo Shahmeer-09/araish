@@ -64,7 +64,7 @@ export default function Header() {
             {/* Decorative element */}
             <span className={`text-[var(--gold)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${scrolled ? 'text-[var(--gold)]' : 'text-[var(--gold-light)]'}`}>✦</span>
             <span className="text-2xl font-serif tracking-[0.25em] group-hover:text-[var(--gold)] transition-colors duration-300">
-              ARAISH
+              AARAISH
             </span>
             <span className={`text-[var(--gold)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${scrolled ? 'text-[var(--gold)]' : 'text-[var(--gold-light)]'}`}>✦</span>
           </Link>

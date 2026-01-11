@@ -37,7 +37,7 @@ interface PaginationData {
 
 export default function Home() {
   const [settings, setSettings] = useState<Settings>({
-    bannerTitle: 'Araish',
+    bannerTitle: 'Aaraish',
     bannerSubtitle: 'Exquisite Handcrafted Jewelry',
     hasBannerImage: false,
     shopNameUrdu: '',
@@ -350,7 +350,7 @@ export default function Home() {
         <div className="relative max-w-4xl mx-auto text-center">
           <span className="text-[var(--gold)] text-sm tracking-[0.3em] uppercase">Our Story</span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif tracking-[0.15em] mt-4 mb-6">
-            ABOUT ARAISH
+            ABOUT AARAISH
           </h2>
           <div className="flex items-center justify-center gap-4 mb-12">
             <span className="w-20 h-px bg-gradient-to-r from-transparent to-[var(--gold)]" />
@@ -360,7 +360,7 @@ export default function Home() {
           
           <div className="space-y-6">
             <p className="text-lg leading-relaxed text-gray-700">
-              At <span className="text-[var(--gold)] font-medium">Araish</span>, we believe that jewelry is more than just an accessory—it&apos;s
+              At <span className="text-[var(--gold)] font-medium">Aaraish</span>, we believe that jewelry is more than just an accessory—it&apos;s
               a reflection of your unique story, a celebration of life&apos;s precious
               moments, and an heirloom to be treasured for generations.
             </p>

@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aaraish - Exquisite Jewelry",
-  description: "Handcrafted jewelry for timeless elegance.",
+  title: "Aaraish - Exquisite Jewellery",
+  description: "Handcrafted jewellery for timeless elegance.",
   icons: {
     icon: [
       { url: '/favicon.ico' },

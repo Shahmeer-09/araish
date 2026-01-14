@@ -12,7 +12,7 @@ export async function GET() {
     if (!settings) {
       return NextResponse.json({
         bannerTitle: 'LUXE',
-        bannerSubtitle: 'Exquisite Handcrafted Jewelry',
+        bannerSubtitle: 'Exquisite Handcrafted Jewellery',
         shopNameUrdu: '',
         hasBannerImage: false,
       });
@@ -20,7 +20,7 @@ export async function GET() {
 
     return NextResponse.json({
       bannerTitle: settings.bannerTitle || 'LUXE',
-      bannerSubtitle: settings.bannerSubtitle || 'Exquisite Handcrafted Jewelry',
+      bannerSubtitle: settings.bannerSubtitle || 'Exquisite Handcrafted Jewellery',
       shopNameUrdu: settings.shopNameUrdu || '',
       hasBannerImage: !!settings.bannerImage,
     });
@@ -59,7 +59,7 @@ export async function POST(request: NextRequest) {
       bannerMimeType?: string | null;
     } = {
       bannerTitle: bannerTitle || 'LUXE',
-      bannerSubtitle: bannerSubtitle || 'Exquisite Handcrafted Jewelry',
+      bannerSubtitle: bannerSubtitle || 'Exquisite Handcrafted Jewellery',
       shopNameUrdu: shopNameUrdu || '',
     };
 

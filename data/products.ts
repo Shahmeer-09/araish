@@ -103,7 +103,7 @@ export const products: JewelryProduct[] = [
     id: '8',
     name: 'Royal Bridal Set',
     category: 'sets',
-    description: 'Complete bridal jewelry set featuring necklace, earrings, and ring. Crafted with exceptional attention to detail for your special day.',
+    description: 'Complete bridal jewellery set featuring necklace, earrings, and ring. Crafted with exceptional attention to detail for your special day.',
     price: 8500,
     images: [
       'https://images.pexels.com/photos/3673947/pexels-photo-3673947.jpeg?auto=compress&cs=tinysrgb&w=1200',

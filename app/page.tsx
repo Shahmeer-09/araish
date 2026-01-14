@@ -165,7 +165,7 @@ export default function Home() {
           {/* Royal decorative element */}
           <div className="flex items-center justify-center gap-4 animate-fade-in-up opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
             <span className="w-12 h-px bg-gradient-to-r from-transparent to-[var(--gold)]" />
-            <span className="text-[var(--gold)] text-sm tracking-[0.3em]">✦ LUXURY JEWELRY ✦</span>
+            <span className="text-[var(--gold)] text-sm tracking-[0.3em]">✦ LUXURY JEWELLERY ✦</span>
             <span className="w-12 h-px bg-gradient-to-l from-transparent to-[var(--gold)]" />
           </div>
 
@@ -360,7 +360,7 @@ export default function Home() {
           
           <div className="space-y-6">
             <p className="text-lg leading-relaxed text-gray-700">
-              At <span className="text-[var(--gold)] font-medium">Aaraish</span>, we believe that jewelry is more than just an accessory—it&apos;s
+              At <span className="text-[var(--gold)] font-medium">Aaraish</span>, we believe that jewellery is more than just an accessory—it&apos;s
               a reflection of your unique story, a celebration of life&apos;s precious
               moments, and an heirloom to be treasured for generations.
             </p>
@@ -402,7 +402,7 @@ export default function Home() {
           <button
             onClick={() => {
               const phoneNumber = '03359178835';
-              const message = encodeURIComponent('Hello! I am interested in your jewelry collection.');
+              const message = encodeURIComponent('Hello! I am interested in your jewellery collection.');
               const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
               window.open(whatsappUrl, '_blank');
             }}

@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
           {/* Brand Section */}
           <div className="space-y-6">
-            <h3 className="text-3xl font-serif tracking-[0.3em] gold-gradient-text">ARAISH</h3>
+            <h3 className="text-3xl font-serif tracking-[0.3em] gold-gradient-text">AARAISH</h3>
             <div className="w-16 h-px bg-gradient-to-r from-[var(--gold)] to-transparent" />
             <p className="text-gray-400 leading-relaxed text-sm">
               Exquisite handcrafted jewelry that tells your unique story. Each
@@ -92,7 +92,7 @@ export default function Footer() {
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent" />
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-gray-500 text-sm">
             <p className="tracking-wide">
-              &copy; {new Date().getFullYear()} <span className="text-[var(--gold)]">Araish</span>. All rights reserved.
+              &copy; {new Date().getFullYear()} <span className="text-[var(--gold)]">Aaraish</span>. All rights reserved.
             </p>
             <p className="tracking-wider text-xs">
               Crafted with <span className="text-[var(--gold)]">♦</span> Excellence

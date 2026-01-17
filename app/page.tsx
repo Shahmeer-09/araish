@@ -53,6 +53,7 @@ export default function Home() {
   });
   const [loading, setLoading] = useState(true);
   const [productsLoading, setProductsLoading] = useState(false);
+  const [bannerCacheBust, setBannerCacheBust] = useState(0);
 
   const fetchSettings = useCallback(async () => {
     try {
@@ -66,6 +67,8 @@ export default function Home() {
           hasBannerImage: data.hasBannerImage,
           shopNameUrdu: data.shopNameUrdu || "",
         });
+        // Bust cache when banner image state changes
+        setBannerCacheBust(Date.now());
       }
     } catch (error) {
       console.error("Error fetching settings:", error);
@@ -145,10 +148,10 @@ export default function Home() {
           {settings.hasBannerImage && (
             // eslint-disable-next-line @next/next/no-img-element
             <img
-              src={`/api/settings/banner?t=${Date.now()}`}
+              src={`/api/settings/banner?t=${bannerCacheBust}`}
               alt="Luxury jewelry background"
               className="w-full h-full object-cover scale-105 animate-[scaleIn_1.5s_ease-out]"
-              key={Date.now()}
+              key={bannerCacheBust}
             />
           )}
           {/* Royal gradient overlay */}

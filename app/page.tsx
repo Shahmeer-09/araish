@@ -135,9 +135,10 @@ export default function Home() {
           {settings.hasBannerImage ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img
-              src="/api/settings/banner"
+              src={`/api/settings/banner?t=${Date.now()}`}
               alt="Luxury jewelry background"
               className="w-full h-full object-cover scale-105 animate-[scaleIn_1.5s_ease-out]"
+              key={Date.now()}
             />
           ) : (
             <Image

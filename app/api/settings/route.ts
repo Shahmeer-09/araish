@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { revalidateTag } from 'next/cache';
 import prisma from '@/lib/prisma';
 import { validateSession } from '@/lib/auth';
 
@@ -87,9 +86,6 @@ export async function POST(request: NextRequest) {
         ...updateData,
       },
     });
-
-    // Revalidate the settings cache
-    revalidateTag('site-settings');
 
     return NextResponse.json({
       success: true,

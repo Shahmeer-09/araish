@@ -58,23 +58,13 @@ export default function Home() {
 
   const fetchSettings = useCallback(async () => {
     try {
-      // Check localStorage cache first
-      const cachedSettings = localStorage.getItem('siteSettings');
-      const cachedTime = localStorage.getItem('siteSettingsTime');
-      const now = Date.now();
-      
-      // Use cache if it's less than 5 minutes old
-      if (cachedSettings && cachedTime && (now - parseInt(cachedTime)) < 5 * 60 * 1000) {
-        const cached = JSON.parse(cachedSettings);
-        setSettings(cached);
-        setBannerCacheBust(cached.updatedAt || now);
-        return;
-      }
-
-      // Fetch fresh data
-      const response = await fetch("/api/settings");
+      // Next.js fetch with cache configuration
+      const response = await fetch("/api/settings", {
+        next: { revalidate: 300 } // Cache for 5 minutes
+      });
       if (response.ok) {
         const data = await response.json();
+        const now = Date.now();
         const settingsData = {
           bannerTitle: data.bannerTitle || "Araish",
           bannerSubtitle:
@@ -85,10 +75,6 @@ export default function Home() {
         };
         setSettings(settingsData);
         setBannerCacheBust(data.updatedAt || now);
-        
-        // Cache the settings
-        localStorage.setItem('siteSettings', JSON.stringify(settingsData));
-        localStorage.setItem('siteSettingsTime', now.toString());
       }
     } catch (error) {
       console.error("Error fetching settings:", error);

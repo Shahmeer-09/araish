@@ -132,7 +132,7 @@ export default function Home() {
       {/* Hero Section with Royal Styling */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          {settings.hasBannerImage ? (
+          {settings.hasBannerImage && 
             // eslint-disable-next-line @next/next/no-img-element
             <img
               src={`/api/settings/banner?t=${Date.now()}`}
@@ -140,16 +140,7 @@ export default function Home() {
               className="w-full h-full object-cover scale-105 animate-[scaleIn_1.5s_ease-out]"
               key={Date.now()}
             />
-          ) : (
-            <Image
-              src="https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1920"
-              alt="Luxury jewelry background"
-              fill
-              className="object-cover scale-105"
-              priority
-              quality={90}
-            />
-          )}
+        }
           {/* Royal gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
           {/* Subtle vignette */}

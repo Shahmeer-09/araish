@@ -169,7 +169,7 @@ export default function SettingsForm({ onSuccess, onCancel }: SettingsFormProps)
               <div className="relative h-48 w-full overflow-hidden rounded-sm border border-gray-200">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={previewUrl || '/api/settings/banner'}
+                  src={previewUrl || `/api/settings/banner?t=${Date.now()}`}
                   alt="Banner preview"
                   className="w-full h-full object-cover"
                 />

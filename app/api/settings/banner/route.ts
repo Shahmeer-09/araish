@@ -18,7 +18,9 @@ export async function GET() {
     return new NextResponse(Buffer.from(settings.bannerImage), {
       headers: {
         'Content-Type': settings.bannerMimeType,
-        'Cache-Control': 'public, max-age=3600',
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        'Pragma': 'no-cache',
+        'Expires': '0',
       },
     });
   } catch (error) {

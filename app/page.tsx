@@ -25,6 +25,7 @@ interface Settings {
   bannerSubtitle: string;
   hasBannerImage: boolean;
   shopNameUrdu: string;
+  updatedAt?: number;
 }
 
 interface PaginationData {
@@ -57,18 +58,37 @@ export default function Home() {
 
   const fetchSettings = useCallback(async () => {
     try {
+      // Check localStorage cache first
+      const cachedSettings = localStorage.getItem('siteSettings');
+      const cachedTime = localStorage.getItem('siteSettingsTime');
+      const now = Date.now();
+      
+      // Use cache if it's less than 5 minutes old
+      if (cachedSettings && cachedTime && (now - parseInt(cachedTime)) < 5 * 60 * 1000) {
+        const cached = JSON.parse(cachedSettings);
+        setSettings(cached);
+        setBannerCacheBust(cached.updatedAt || now);
+        return;
+      }
+
+      // Fetch fresh data
       const response = await fetch("/api/settings");
       if (response.ok) {
         const data = await response.json();
-        setSettings({
+        const settingsData = {
           bannerTitle: data.bannerTitle || "Araish",
           bannerSubtitle:
             data.bannerSubtitle || "Exquisite Handcrafted Jewelry",
           hasBannerImage: data.hasBannerImage,
           shopNameUrdu: data.shopNameUrdu || "",
-        });
-        // Bust cache when banner image state changes
-        setBannerCacheBust(Date.now());
+          updatedAt: data.updatedAt || now,
+        };
+        setSettings(settingsData);
+        setBannerCacheBust(data.updatedAt || now);
+        
+        // Cache the settings
+        localStorage.setItem('siteSettings', JSON.stringify(settingsData));
+        localStorage.setItem('siteSettingsTime', now.toString());
       }
     } catch (error) {
       console.error("Error fetching settings:", error);

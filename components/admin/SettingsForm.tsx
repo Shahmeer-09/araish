@@ -85,6 +85,10 @@ export default function SettingsForm({ onSuccess, onCancel }: SettingsFormProps)
         throw new Error(data.error || 'Failed to save settings');
       }
 
+      // Clear the cached settings so frontend fetches fresh data
+      localStorage.removeItem('siteSettings');
+      localStorage.removeItem('siteSettingsTime');
+
       onSuccess();
     } catch (err) {
       setError(err instanceof Error ? err.message : 'An error occurred');

@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { revalidateTag } from 'next/cache';
 import prisma from '@/lib/prisma';
 import { validateSession } from '@/lib/auth';
 
@@ -10,20 +11,26 @@ export async function GET() {
     });
 
     if (!settings) {
-      return NextResponse.json({
+      const response = NextResponse.json({
         bannerTitle: 'LUXE',
         bannerSubtitle: 'Exquisite Handcrafted Jewellery',
         shopNameUrdu: '',
         hasBannerImage: false,
+        updatedAt: Date.now(),
       });
+      response.headers.set('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=86400');
+      return response;
     }
 
-    return NextResponse.json({
+    const response = NextResponse.json({
       bannerTitle: settings.bannerTitle || 'LUXE',
       bannerSubtitle: settings.bannerSubtitle || 'Exquisite Handcrafted Jewellery',
       shopNameUrdu: settings.shopNameUrdu || '',
       hasBannerImage: !!settings.bannerImage,
+      updatedAt: settings.updatedAt.getTime(),
     });
+    response.headers.set('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=86400');
+    return response;
   } catch (error) {
     console.error('Error fetching settings:', error);
     return NextResponse.json(
@@ -81,12 +88,16 @@ export async function POST(request: NextRequest) {
       },
     });
 
+    // Revalidate the settings cache
+    revalidateTag('site-settings');
+
     return NextResponse.json({
       success: true,
       bannerTitle: settings.bannerTitle,
       bannerSubtitle: settings.bannerSubtitle,
       shopNameUrdu: settings.shopNameUrdu,
       hasBannerImage: !!settings.bannerImage,
+      updatedAt: settings.updatedAt.getTime(),
     });
   } catch (error) {
     console.error('Error updating settings:', error);
